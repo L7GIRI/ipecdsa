@@ -1,18 +1,22 @@
 public class q2 {
     
-    public int reverse(int x) {
-        int ans=0;
-        while( x>0){
-            int y=x%10;
-            ans= ans*10 +y;
-            x=x/10;
+    
+        public static int subtractProductAndSum(int n) {
+            int sum=0;
+            int product=1;
+            while (n!=0){
+                int a = n%10;
+                sum = sum +a ;
+                product = product * a;
+                n=n/10;
+            }
+            int x=product-sum;
+            return x;
+            
         }
-        System.out.println("ans");
-
-        
-        
-
-        
-        
+    
+    public static void main(String[] args) {
+        System.out.println(subtractProductAndSum(4343));
     }
+
 }
