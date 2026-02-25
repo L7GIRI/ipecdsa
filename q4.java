@@ -5,11 +5,8 @@ public class q4 {
         prefix[0]=arr[0];
         for ( int i=1;i<=arr.length-1;i++){
             prefix[i]= prefix[i-1] + arr[i];
-            
         }
-        
         return prefix;
-
     }
 
     public static void main(String[] args) {
